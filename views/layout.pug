@@ -1,0 +1,65 @@
+doctype html
+html
+  head
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title James Reinknecht Dot Com
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="icon", href="/images/favicon-anchor.ico")
+  body
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="https://use.fontawesome.com/cd53706be4.js")
+    .navbar.navbar-default
+      .container
+        span.navbar-brand Capt. James Reinknecht, Web Developer
+        button.navbar-toggle(data-toggle="collapse", data-target=".navHeaderCollapse")
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        .collapse.navbar-collapse.navHeaderCollapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href="#about") About
+            li
+              a(href="/blog") Blog
+            li
+              a(href="#contact") Contact
+            li
+              a(href="#portfolio") Portfolio
+            li
+              a(href="https://drive.google.com/open?id=0B9ekC7Vw1F8xM3E2NnZzVTg1cnc") Resume
+            li.dropdown
+              a.dropdown-toggle(href="#", data-toggle="dropdown") Social Media
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href="http://www.linkedin.com/in/jamesreinknecht")
+                    i.fa.fa-linkedin-square(aria-hidden="true") LinkedIN
+                li
+                  a(href="http://github.com/CaptainJimmy")
+                    i.fa.fa-github(aria-hidden="true") Github
+                li
+                  a(href="https://stackoverflow.com/users/8279464/jim-reinknecht")
+                    i.fa.fa-stack-overflow(aria-hidden="true") Stackoverflow
+                li
+                  a(href="http://www.facebook.com/captainjimscharters")
+                    i.fa.fa-facebook-square(aria-hidden="true") Facebook
+                li
+                  a(href="mailto:captainjimscharters@gmail.com")
+                    i.fa.fa-envelope-open-o(aria-hidden="true") Email
+                li
+                  a(href="https://www.youtube.com/user/CaptainSloose")
+                    i.fa.fa-youtube-play(aria-hidden="true") YouTube
+                li
+                  a(href="https://drive.google.com/open?id=0B9ekC7Vw1F8xM3E2NnZzVTg1cnc")
+                    i.fa.fa-file-pdf-o(aria-hidden="true") Resume
+                li
+                  a(href="tel:9088032300")
+                    i.fa.fa-phone-square(aria-hidden="true") Phone
+    block content
+		
+    .container-fluid(style="background:#e95420;margin:20px;padding:20px;")
+      .footer
+        h3.text-center Copyright 2017 Capt. Jim Reinknecht

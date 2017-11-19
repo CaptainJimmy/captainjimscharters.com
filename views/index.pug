@@ -1,0 +1,144 @@
+extends layout
+
+block content
+  #about.jumbotron(style="margin-bottom: 0px;")
+    .container
+      h1.text-center  Web Developer, Captain, Dad, Nerd
+      img.img-responsive.img-circle.profileImgSizeAdapt(src="/images/profile.jpg", alt="Profile")
+      p I am a former UNIX Engineer and shell scripting guru who took a 13 year hiatus to pursue a career as a full-time boat Captain.  I have been working professionally on my Captains license, I have returned to my true passion:  technology and coding. Prior to my career change, I specialized in complex UNIX Shell Scripting, Server Administration, and complex and specialized software integration. I worked in a variety of roles, however most had a common theme: writing custom scripts and making software 'talk' to each other.  Early in 2017 I decided to reinvest in my skills to get back on the bleeding edge of technology. I enrolled in Rutgers University Coding Bootcamp in their Full Stack Web Development course, working intensively with HTML, CSS, JavaScript, JQuery, Ajax, NodeJS among a ton of other technologies and libraries.  I combined that with my previous skills in Linux administration, shell scripting, system architecture, and 
+        strong BOOM! 
+        | I'm back in business.  If you'd like my 
+        a(href="https://drive.google.com/open?id=0B9ekC7Vw1F8xM3E2NnZzVTg1cnc") resume, 
+        a(href="mailto:captainjimscharters@gmail.com") e-mail me 
+        | or add me on 
+        a(href="http://www.linkedin.com/in/jamesreinknecht") LinkedIn.  
+      h2.text-center I am currently available for full-time, short and long term contract, and free lance work.
+    .container
+      .well.well-lg#blog
+        h4.text-center Check out my blog:
+        a(href="/blog")
+          h2.text-center Code, Shiny Things, and other Random Shit I like
+        h3.text-center.hidden Recent Blog Entries:
+          .container#blog-entries.hidden
+    
+  .container-fluid(style="background: #e95420;padding:20px;")
+    .container.col-md-6.col-sm-12
+      .panel#blog
+        h2.text-center About This Website / Webserver
+        p.text-center This is a custom site created entirely by me on a hardened linux server configured entirely by me.  The webserver is a standalone linux server on 
+          a(href="https://linode.com") Linode.com 
+          | running Ubuntu linux.  The webserver is served via nginx in a reverse proxy, serving requests to NodeJS/Express server for web content and API routes, and Hexo.io for blogging software.  The server is hardened and secured via ssl certificates, ufw and ssh tunnelling. This server creates pages dynamically with Express and the Pug rendering and templating engine.
+        h3.text-center Powered with:
+        h1.text-center
+          i.icon-nodejs
+          i.icon-npm
+          i.icon-javascript
+          i.icon-nginx
+          i.icon-ubuntu
+          i.icon-git
+          i.icon-mysql
+          i.icon-bootstrap
+          i.icon-jquery
+          i.icon-css3
+          i.icon-html5                      
+    .container.col-md-6.col-sm-12
+      #contact.well.well-lg(style="margin: 20px;")
+        .h2.text-center Connect with Me
+        .row.row-eq-height
+          .col-md-2.col-sm
+          .col-md-1.col-sm-3.col-xs-6
+            a(href="http://github.com/CaptainJimmy")
+              i.fa.fa-github.fa-3x(aria-hidden="true")
+          .col-md-1.col-sm-3.col-xs-6
+           a(href="http://www.linkedin.com/in/jamesreinknecht")
+              i.fa.fa-linkedin-square.fa-3x(aria-hidden="true")
+          .col-md-1.col-sm-3.col-xs-6
+            a(href="https://stackoverflow.com/users/8279464/jim-reinknecht")
+              i.fa.fa-stack-overflow.fa-3x(aria-hidden="true")
+          .col-md-1.col-sm-3.col-xs-6
+            a(href="mailto:captainjimscharters@gmail.com")
+              i.fa.fa-envelope-open-o.fa-3x(aria-hidden="true")
+          .col-md-1.col-sm-3.col-xs-6
+            a(href="http://www.facebook.com/captainjimscharters")
+              i.fa.fa-facebook-square.fa-3x(aria-hidden="true")
+          .col-md-1.col-sm-3.col-xs-6
+            a(href="https://www.youtube.com/user/CaptainSloose")
+              i.fa.fa-youtube-play.fa-3x(aria-hidden="true")
+          .col-md-1.col-sm-3.col-xs-6
+            a(href="https://drive.google.com/open?id=0B9ekC7Vw1F8xM3E2NnZzVTg1cnc")
+              i.fa.fa-file-pdf-o.fa-3x(aria-hidden="true")
+          .col-md-1.col-sm-3.col-xs-6
+            a(href="tel:9088032300")
+              i.fa.fa-phone-square.fa-3x(aria-hidden="true")
+          .col-md-2.col-sm
+
+  .container
+    #mainBox.container-fluid.center-block
+      #portfolio.jumbotron
+        h2.text-center Recent Projects
+        hr
+        .row
+          .col-sm-6.col-xs.project
+            a(href="https://captainjimmy.github.io/NYTimesAPI/index.html")
+              i.fa.fa-newspaper-o.fa-5x(aria-hidden="true")
+              .overlay
+                .text NY Times API Portal
+            p This uses 3 different NYT APis.  Content is generated with jquery calls to the DOM / Form elements, and AJAX calls to the NYtimes APIs (search, top stories, and most popular).  Content is created in its own bootstrap containers as needed and prepended to the DOM elements, along with searches by keywords and dates. Toolsets used: APIs, Jquery, Ajax, JSON, Javascript, CSS, Bootstrap, Bootstrap Date Validation.
+          .col-sm-6.col-xs.project
+            a(href="https://captainjimmy.github.io/Hangman/index.html")
+              i.fa.fa-cubes.fa-5x(aria-hidden="true")
+              .overlay
+                .text A Javascript Game- Hipster Hangman.
+            p A Game built in pure javascript. No JQuery selectors or Hipsters were harmed in the making of this game.
+        .row
+          .col-sm-6.col-xs.project
+            a(href="https://captainjimmy.github.io/jquery-game/index.html")
+              i.fa.fa-paper-plane-o.fa-5x(aria-hidden="true")
+              .overlay
+                .text Help The Butter Robot Game
+            p A JQuery Game with a Rick and Morty theme. Bootstrap, Jquery, Modals, Javascript, Random Number Generation, DOM Manipulation
+          .col-sm-6.col-xs.project
+            a(href="https://captainjimmy.github.io/Trivia/index.html")
+              i.fa.fa-space-shuttle.fa-5x(aria-hidden="true")
+              .overlay
+                .text Game of Thrones Trivia
+            p A Trivia Game with Game of Thrones themed questions on a response timer.  The questions are stock and kept locally in an Object..  Bootstrap, JQuery, Modals, Javascript, DOM Manipulation, Timers
+        .row
+          .col-sm-6.col-xs.project
+            a(href="https://captainjimmy.github.io/Trivia/index.html")
+              i.fa.fa-pie-chart.fa-5x(aria-hidden="true")
+              .overlay
+                .text Trivia API with OTDB API
+            p A Trivia Game, Similar with Game of Thrones themed trivia, however heavily ported to use random questions from Open Trivia Database, using their API.  The questions are on a response timer, and pulled randomly from the DB with AJAX calls for API Tokens and questions.  AJAX, JSON, JQuery, Bootstrap, Modals, Javascript, DOM Manipulation, Timers
+          .col-sm-6.col-xs.project
+            a(href="https://captainjimmy.github.io/GiphyAPI/index.html")
+              i.fa.fa-graduation-cap.fa-5x(aria-hidden="true")
+              .overlay
+                .text A Giphy API Portal
+            p Giphy API Content is generated with jquery calls to the DOM, buttons are generated dynamically, and the button clicks pull 10 pictures from the selected topic from a random offset with AJAX. Jquery events are used for button clicks, and to change the .gif state between animated and still. Toolsets used: Bootstrap, Jquery, Ajax, JSON, Random Database Offsets (to provide different content if available from the DB), Javascript, CSS
+        .row
+          .col-sm-6.col-xs.project
+            a(href="https://captainjimmy.github.io/Bootstrap-Portfolio/index.html")
+              i.fa.fa-id-card.fa-5x(aria-hidden="true")
+              .overlay
+                .text BootStrap Portfolio 
+            p A simple Bootstrap, reactive portfolio.  Fontawesome Icons, Stock Javascript Dropdown Menus and Bootstrap Active Nav Bars, CSS Animations
+  .container-fluid
+    .well.well-lg
+      .panel#interests
+        h2.text-center I like all kinds of stuff!
+        ul
+          li
+            p I am interested in all forms of technology, especially mobile web portals and apps, and server architecture.
+          li
+            p I am a semi-professional kayak fisherman who is sponsored by 
+              a(href="http://thekayakfishingstore.com") The Kayak Fishing Store 
+              | as a Pro Staff member.
+          li
+            p I like almost all forms and genres of music, currently I am listening to electronica, classic and southern rock.
+          li
+            p I am ALWAYS working on something new. Check out my 
+              a(href="#contact") github 
+              | or my 
+              a(href="/blog") blog 
+              | to see what I'm working on

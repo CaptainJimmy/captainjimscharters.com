@@ -1,0 +1,183 @@
+doctype html
+html(lang="en")
+	head
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title James Reinknecht Dot Com
+		// Latest compiled and minified CSS
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css")
+		// <link href="https://fonts.googleapis.com/css?family=Cinzel%7CZilla+Slab%7CDroid+Serif:400,700" rel="stylesheet">
+		// Linking CSS
+		link(rel="stylesheet", type="text/css", href="assets/css/style.css")
+		link(rel="icon", href="assets/images/favicon-anchor.ico")
+	body
+		.navbar.navbar-default
+			.container
+				span.navbar-brand Capt. James Reinknecht
+				button.navbar-toggle(data-toggle="collapse", data-target=".navHeaderCollapse")
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				.collapse.navbar-collapse.navHeaderCollapse
+					ul.nav.navbar-nav.navbar-right
+						li.active
+							a(href="#about") About
+						li
+							a(href="#contact") Contact
+						li
+							a(href="#portfolio") Portfolio
+						li
+							a(href="https://drive.google.com/open?id=0B9ekC7Vw1F8xM3E2NnZzVTg1cnc") Resume
+						li.dropdown
+							a.dropdown-toggle(href="#", data-toggle="dropdown")
+								| Social Media
+								b.caret
+							ul.dropdown-menu
+								li
+									a(href="http://www.linkedin.com/in/jamesreinknecht")
+										i.fa.fa-linkedin-square(aria-hidden="true")
+										| LinkedIN
+								li
+									a(href="http://github.com/CaptainJimmy")
+										i.fa.fa-github(aria-hidden="true")
+										| Github
+								li
+									a(href="https://stackoverflow.com/users/8279464/jim-reinknecht")
+										i.fa.fa-stack-overflow(aria-hidden="true")
+										| Stackoverflow
+								li
+									a(href="http://www.facebook.com/captainjimscharters")
+										i.fa.fa-facebook-square(aria-hidden="true")
+										| Facebook
+								li
+									a(href="mailto:captainjimscharters@gmail.com")
+										i.fa.fa-envelope-open-o(aria-hidden="true")
+										| Email
+								li
+									a(href="https://www.youtube.com/user/CaptainSloose")
+										i.fa.fa-youtube-play(aria-hidden="true")
+										| YouTube
+								li
+									a(href="https://drive.google.com/open?id=0B9ekC7Vw1F8xM3E2NnZzVTg1cnc")
+										i.fa.fa-file-pdf-o(aria-hidden="true")
+										| Resume
+								li
+									a(href="tel:9088032300")
+										i.fa.fa-phone-square(aria-hidden="true")
+										| Phone
+			#about.jumbotron
+				.container
+					h1.text-center  Coder and Captain by Day, Father of Two By Night 
+					img.img-responsive.img-circle.profileImgSizeAdapt(src="assets/images/profile.jpg", alt="Profile")
+					p I am a former Software Engineer and UNIX guru who took a 13 year hiatus to pursue a career as a full-time boat Captain.  I have been working professionally on my Captains license, but I am eager to return to my true passion:  technology and coding. Prior to my career change, I specialized in complex UNIX Shell Scripting, Server Administration, and complex and specialized software integration. I worked in a variety of roles, however most had a common theme: writing custom scripts.  Early in 2017 I decided to reinvest in my skills to get on the bleeding edge of technology. I am currently enrolled in Rutgers Coding Bootcamp for Full Stack Flex Web Development, working with HTML, CSS, JavaScript, JQuery, Bootstrap, AJAX, JSON,  Linux, Apache, and all the tools associated.  I can provide my Captain resume upon request to show more recent work history.
+				.container
+					#interests.well.well-lg
+						h2.text-center My Interests:
+						ul
+							li
+								p
+									| I am interested in all forms of technology, especially mobile web portals and apps.
+							li
+								p
+									| I am a semi-professional kayak fisherman who is sponsored by  
+									a(href="http://thekayakfishingstore.com") The Kayak Fishing Store
+									|  as a Pro Staff member.
+							li
+								p
+									| I like almost all forms and genres of music, currently I am listening to electronica and modern country music/southern rock.
+							li
+								p
+									| I am currently working on a mobile app and mobile friendly web portal for the maritime passenger industry to help with logging, vessel logistics, parts and supply inventories, and maintenence
+			.container
+				#contact.well
+					.row
+						h2.text-center Connect with Me
+						.col-sm-1
+						.col-sm-1
+							a(href="http://github.com/CaptainJimmy")
+								i.fa.fa-github.fa-5x(aria-hidden="true")
+						.col-sm-1
+							a(href="http://www.linkedin.com/in/jamesreinknecht")
+								i.fa.fa-linkedin-square.fa-5x(aria-hidden="true")
+						.col-sm-1
+							a(href="https://stackoverflow.com/users/8279464/jim-reinknecht")
+								i.fa.fa-stack-overflow.fa-5x(aria-hidden="true")
+						.col-sm-1
+							a(href="mailto:captainjimscharters@gmail.com")
+								i.fa.fa-envelope-open-o.fa-5x(aria-hidden="true")
+						.col-sm-1
+							a(href="http://www.facebook.com/captainjimscharters")
+								i.fa.fa-facebook-square.fa-5x(aria-hidden="true")
+						.col-sm-1
+							a(href="https://www.youtube.com/user/CaptainSloose")
+								i.fa.fa-youtube-play.fa-5x(aria-hidden="true")
+						.col-sm-1
+							a(href="https://drive.google.com/open?id=0B9ekC7Vw1F8xM3E2NnZzVTg1cnc")
+								i.fa.fa-file-pdf-o.fa-5x(aria-hidden="true")
+						.col-sm-1
+							a(href="tel:9088032300")
+								i.fa.fa-phone-square.fa-5x(aria-hidden="true")
+						.col-sm-1
+		.container
+			#mainBox.container-fluid.center-block
+				#portfolio.jumbotron
+					h2.text-center My Projects
+					hr
+					.row
+						.col-sm-5.project
+							a(href="https://captainjimmy.github.io/NYTimesAPI/index.html")
+								i.fa.fa-newspaper-o.fa-5x(aria-hidden="true")
+								.overlay
+									.text NY Times API Portal
+							p
+								| This uses 3 different NYT APis.  Content is generated with jquery calls to the DOM / Form elements, and AJAX calls to the NYtimes APIs (search, top stories, and most popular).  Content is created in its own bootstrap containers as needed and prepended to the DOM elements, along with searches by keywords and dates. Toolsets used: APIs, Jquery, Ajax, JSON, Javascript, CSS, Bootstrap, Bootstrap Date Validation
+						.col-sm-5.project
+							a(href="https://captainjimmy.github.io/Hangman/index.html")
+								i.fa.fa-cubes.fa-5x(aria-hidden="true")
+								.overlay
+									.text A Javascript Game- Hipster Hangman 
+							p
+								| A Game built in pure javascript. No JQuery selectors or Hipsters were harmed in the making of this game.
+					.row
+						.col-sm-5.project
+							a(href="https://captainjimmy.github.io/jquery-game/index.html")
+								i.fa.fa-paper-plane-o.fa-5x(aria-hidden="true")
+								.overlay
+									.text Help The Butter Robot Game
+							p
+								| A JQuery Game with a Rick and Morty theme. Bootstrap, Jquery, Modals, Javascript, Random Number Generation, DOM Manipulation
+						.col-sm-5.project
+							a(href="https://captainjimmy.github.io/Trivia/index.html")
+								i.fa.fa-space-shuttle.fa-5x(aria-hidden="true")
+								.overlay
+									.text Game of Thrones Trivia
+							p
+								| A Trivia Game with Game of Thrones themed questions on a response timer.  The questions are stock and kept locally in an Object..  Bootstrap, JQuery, Modals, Javascript, DOM Manipulation, Timers
+					.row
+						.col-sm-5.project
+							a(href="https://captainjimmy.github.io/Trivia/index.html")
+								i.fa.fa-pie-chart.fa-5x(aria-hidden="true")
+								.overlay
+									.text Trivia API with OTDB API
+							p
+								| A Trivia Game, Similar with Game of Thrones themed trivia, however heavily ported to use random questions from Open Trivia Database, using their API.  The questions are on a response timer, and pulled randomly from the DB with AJAX calls for API Tokens and questions.  AJAX, JSON, JQuery, Bootstrap, Modals, Javascript, DOM Manipulation, Timers
+						.col-sm-5.project
+							a(href="https://captainjimmy.github.io/GiphyAPI/index.html")
+								i.fa.fa-graduation-cap.fa-5x(aria-hidden="true")
+								.overlay
+									.text A Giphy API Portal
+							p
+								| Giphy API Content is generated with jquery calls to the DOM, buttons are generated dynamically, and the button clicks pull 10 pictures from the selected topic from a random offset with AJAX. Jquery events are used for button clicks, and to change the .gif state between animated and still. Toolsets used: Bootstrap, Jquery, Ajax, JSON, Random Database Offsets (to provide different content if available from the DB), Javascript, CSS
+					.row
+						.col-sm-5.project
+							a(href="https://captainjimmy.github.io/Bootstrap-Portfolio/index.html")
+								i.fa.fa-id-card.fa-5x(aria-hidden="true")
+								.overlay
+									.text BootStrap Portfolio 
+							p
+								| A simple Bootstrap, reactive portfolio.  Fontawesome Icons, Stock Javascript Dropdown Menus and Bootstrap Active Nav Bars, CSS Animations
+		footer
+			| Copyright 2017 Capt. Jim Reinknecht
+		// Linking jQuery
+		script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+		script(src="https://use.fontawesome.com/cd53706be4.js")
