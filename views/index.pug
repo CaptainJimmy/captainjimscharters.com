@@ -15,13 +15,34 @@ block content
         a(href="https://drive.google.com/open?id=0B9ekC7Vw1F8xM3E2NnZzVTg1cnc") resume
         |  and see what I have to offer.    
     .container
-      .well.well-lg#blog
-        h4.text-center Check out my blog:
-        a(href="/blog")
-          h2.text-center Code, Shiny Things, and other Random Shit I like
-        h3.text-center.hidden Recent Blog Entries:
-          .container#blog-entries.hidden
-    
+      .panel.panel-sm
+        .row.row-eq-height
+          .col-sm-1.col-xs
+          .col-sm-3.col-xs-12
+            .panelg#blog
+              .panel-heading
+                h4.text-center Check out my blog:
+              .panel-body
+                .well.well-sm
+                  a(href="/blog", title="blog") 
+                    h2 Code, Shiny Things, and other Random Shit I like
+          .col-sm-7.col-xs-12
+            .panel  
+              .panel-heading
+                h4.text-center Most Recent Blog Entry:
+              .panel-body
+                  .well.well-sm
+                    .well-heading
+                      a(href="/blog", title= latestBlogEntry.title) 
+                        h3= latestBlogEntry.title
+                    .well-body
+                      p.blog-side-bar= latestBlogEntry._content.substring(0,200) 
+                        |
+                        a(href="/blog")
+                            span.blog-side-bar ....
+                      .blog-side-bar Date: 
+                      span= latestBlogEntry.date
+          .col-sm-1.col-xs
   .container-fluid(style="background: #e95420;padding:20px;")
     .container.col-md-6.col-sm-12
       .panel#blog
@@ -147,6 +168,7 @@ block content
     .well.well-lg
       .panel#interests
         h2.text-center I like all kinds of stuff!
+        h3.text-center Does it move? Does it go? Does it shoot fire? Is it loud?
         ul
           li
             p I am interested in all forms of technology, especially mobile web portals and apps, and server architecture.
