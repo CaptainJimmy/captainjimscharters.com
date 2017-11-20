@@ -69,3 +69,8 @@ theme: bootstrap
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+# hexo-admin authentification
+admin:
+  username: sloose
+  password_hash: $2a$10$KaMc/ow7grsouj3F8eITGuOKSKijz8M61p8HrLVCCKM5rz2AgGhH2
+  secret: emily avery reinknecht casey abigail reinknecht joy christina reinknecht james brian reinknecht
